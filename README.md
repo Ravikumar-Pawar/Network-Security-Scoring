@@ -135,3 +135,53 @@ categorized by ICE as:\
  2 x Search Engines
 Usage Score of XYZ = ((1 x 2) + (2 x 1) + (2 x 3)) / 5
 ```
+
+# 2) Operating System Analysis:
+Operating systems (OS) of devices which users connected to the Internet over the studied
+network were examined by NESRAS considering their vulnerabilities. According to input
+dataset, operating systems of the users were scored, and these scores were added to the user
+score. Each operating system had different scores. Most popular operating systems and their
+scores are shown at Table 2. regarding vulnerabilities in National Vulnerability Database (NVD)
+
+TABLE II: 6 MOST USED OPERATING SYSTEMS AND THEIR SYSTEM SCORES
+Operating Systems Scores
+Linux 3,50
+Windows 7 4,50
+Android 3,30
+IOS 4,00
+Mac OS X 3,70
+Windows 10 4,30
+
+# 4) DNS Analysis: DNSes are divided into 3 categories:
+ Service Provider Assigned DNS</br>
+ Known servers DNS</br>
+ Unknown servers DNS</br>
+
+# B. Network Component Analysis:</br>
+  In this part, network and network components were examined independently from users. In
+other words, networks’ scores depended on their network security parameters like Firewall, IDS.
+Many of these technologies sustain security of the networks, so enterprises ought to get service
+for security equipments from known network security companies if they claim to have a reliable
+network. In NESRAS, impression of the user score was higher than the system analysis score on
+overall score of the system. Because usage of the system, which is an answer of following
+questions; which web sites were visited by users, what kind of contents were downloaded by
+users and which email servers were chosen by users, shows the real impact on the network.
+# Network components Score
+```diff
+Firewall 2
+Anti-Malware Tools 0.5
+Virtual private Network (VPN) 1
+URL Filtering 0.5
+Anti-Spam Software 0.5
+Intrusion Detection System (IDS) 0.5
+```
+# Conclusion:
+In this study, network users and network components are examined. A system was
+offered to score networks and users of the networks, and a network simulator program was
+created to test the system. Users were scored based on their usage, operating system, browser,
+and DNS information in created synthetic dataset. Comparing with the determined components
+in the system, network components were scored accordingly. System assigned to the studied
+network one of the colors; red, orange, yellow or green according to the total score. Users who
+had 10 lowest total user scores were presented. These users assisted to hold a view on the
+hazardous users of the network. Finally, distributions of the operating systems, web browsers and
+DNSes over the users were presented with bar charts
